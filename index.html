@@ -8,10 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <div class="app">
-      <div
-        class="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8"
-      >
+    <div class="app bg-gray-100 min-h-screen">
+
         <div class="max-w-xs m-auto w-full">
           <div class="text-center">
             <img
@@ -41,16 +39,22 @@
                 />
               </div>
             </div>
-
-            <div class="mt-5 radio-toolbar flex items-center justify-between">
+            <label
+              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-6"
+              for="grid-first-name"
+            >
+              Seleccione una opción
+            </label>
+			
+            <div class=" radio-toolbar flex items-center justify-between">
                <input type="radio" id="radioFemenino" name="radioSex" value="Femenino" >
-    <label class="mr-1" for="radioFemenino">Femenino</label>
+			    <label class="mr-1" for="radioFemenino">Femenino</label>
 
-    <input type="radio" id="radioMasculino" name="radioSex" value="Masculino">
-    <label class="ml-1" for="radioMasculino">Masculino</label>
+			    <input type="radio" id="radioMasculino" name="radioSex" value="Masculino">
+			    <label class="ml-1" for="radioMasculino">Masculino</label>
             </div>
 
-            <div class="mt-5">
+            <div class="mt-8">
               <a
                 href="ok.html"
                 class="w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out"
@@ -62,14 +66,13 @@
             <div class="mt-6">
               <a
                 href="error.html"
-                class="w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-teal-500 hover:bg-teal-500 focus:outline-none focus:border-teal-700 focus:shadow-outline-teal active:bg-blue-700 transition duration-150 ease-in-out"
+                class="w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-teal-500 hover:bg-teal-400 focus:outline-none focus:border-teal-700 focus:shadow-outline-teal active:bg-blue-700 transition duration-150 ease-in-out"
               >
                 ESCANEAR CÓDIGO QR
               </a>
             </div>
           </form>
         </div>
-      </div>
     </div>
 
     <style>
@@ -86,8 +89,9 @@
         transition-property: background-color, border-color, color, fill, stroke,
           opacity, box-shadow, transform;
         width: 100%;
-        font-size: 0.875rem;
+        font-size: .75rem;
         color: #1a202c;
+        text-transform: uppercase;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 0.5rem;
@@ -104,7 +108,7 @@
       }
 
       .radio-toolbar label:hover {
-        background-color: #3182ce;
+        background-color: #48bb78;
         color: #fff;
       }
 
@@ -113,8 +117,8 @@
       }
 
       .radio-toolbar input[type="radio"]:checked + label {
-        background-color: #3182ce;
-        border-color: #3182ce;
+        background-color: #48bb78;
+        border-color: #48bb78;
         color: #fff;
       }
     </style>
