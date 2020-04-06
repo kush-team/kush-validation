@@ -5,12 +5,13 @@
     <title>Validación de Documento</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link href="css/lib/tailwind.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <div class="min-h-screen pb-12 bg-gray-100 app">
       <div class="w-full max-w-sm m-auto">
-        <div class="text-center">
+        <a href="index.html" class="text-center block bg-gray-200 sm:bg-gray-100">
           <img
             src="./img/argentina-presidencia.png"
             alt="Tramites a distancia"
@@ -18,7 +19,7 @@
             height="217"
             class="max-w-xs m-auto"
           />
-        </div>
+        </a>
         <div>
           <div class="relative px-4 py-3 m-3 mb-2 text-center text-green-700 bg-green-100 border border-green-400 rounded" role="alert" >
             <strong class="block font-bold" >Documento válido para circular</strong>
@@ -80,32 +81,5 @@
       </div>
     </div>
 
-    <style>
-      .list .item {
-        border-bottom: 1px solid #f9f9f9;
-        padding: 0.5rem 1rem;
-        margin-bottom: 0.25rem;
-        font-size: 1.125rem;
-      }
-
-      .list .item:last-child {
-        border-bottom: 1px solid transparent;
-      }
-
-      .item span {
-        font-weight: 700;
-        display: block;
-      }
-
-      @media (max-width: 640px) {
-        .app .max-w-sm {
-          max-width: 100%;
-        }
-
-        img {
-          width: 100px;
-        }
-      }
-    </style>
   </body>
 </html>

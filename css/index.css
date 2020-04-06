@@ -1,3 +1,30 @@
+ .list .item {
+    border-bottom: 1px solid #f9f9f9;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.125rem;
+  }
+
+  .list .item:last-child {
+    border-bottom: 1px solid transparent;
+  }
+
+  .item span {
+    font-weight: 700;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .app .max-w-sm {
+      max-width: 100%;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+
+
 .radio-toolbar input[type="radio"] {
   opacity: 0;
   position: fixed;
