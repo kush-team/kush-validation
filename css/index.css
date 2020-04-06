@@ -1,28 +1,44 @@
- .list .item {
-    border-bottom: 1px solid #f9f9f9;
-    padding: 0.5rem 1rem;
-    margin-bottom: 0.25rem;
-    font-size: 1.125rem;
-  }
+.list .item {
+	border-bottom: 1px solid #f9f9f9;
+	padding: 0.5rem 1rem;
+	margin-bottom: 0.25rem;
+	font-size: 1.125rem;
+}
 
-  .list .item:last-child {
-    border-bottom: 1px solid transparent;
-  }
+.list .item:last-child {
+	border-bottom: 1px solid transparent;
+}
 
-  .item span {
-    font-weight: 700;
-    display: block;
-  }
+.item span {
+	font-weight: 700;
+	display: block;
+}
 
-  @media (max-width: 640px) {
-    .app .max-w-sm {
-      max-width: 100%;
-    }
+@media (max-width: 640px) {
+	.app .max-w-sm {
+	  max-width: 100%;
+	}
 
-    img {
-      width: 100px;
-    }
-  }
+	img {
+	  width: 100px;
+	}
+}
+
+.button {
+	transition-duration: 150ms;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+	width: 100%;
+	font-size: .875rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	border-radius: .375rem;
+    justify-content: center;
+}
 
 
 .radio-toolbar input[type="radio"] {
